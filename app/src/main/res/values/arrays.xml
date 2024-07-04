@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type_order">
+        <item>Iced Matcha Latte</item>
+        <item>Iced Chocolate</item>
+        <item>Iced Pinacolada</item>
+        <item>Iced Palm Sugar</item>
+        <item>Iced Red Velvet</item>
+    </string-array>
+</resources>

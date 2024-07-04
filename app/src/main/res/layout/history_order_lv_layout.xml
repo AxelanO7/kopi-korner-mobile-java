@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gray_r12_b1"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvCustomerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/karla"
+        android:text="Nama Pembeli"
+        android:textColor="@color/black"
+        android:textFontWeight="700"
+        android:textSize="22sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <TextView
+        android:id="@+id/tvTotalTypeOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/karla"
+        android:text="Jumlah Order : 0"
+        android:textColor="@color/black"
+        android:textFontWeight="700"
+        android:textSize="22sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/karla"
+        android:text="Nama Minuman :"
+        android:textColor="@color/black"
+        android:textFontWeight="700"
+        android:textSize="22sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <TextView
+        android:id="@+id/tvOrderItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/karla"
+        android:text="Nasi Goreng"
+        android:textColor="@color/black"
+        android:textFontWeight="700"
+        android:textSize="20sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <TextView
+        android:id="@+id/tvTotalPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/karla"
+        android:text="Total Harga : Rp. 0"
+        android:textColor="@color/black"
+        android:textFontWeight="700"
+        android:textSize="22sp" />
+
+</LinearLayout>

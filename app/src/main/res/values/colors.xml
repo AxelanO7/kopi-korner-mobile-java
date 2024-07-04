@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--custom-->
+    <color name="c_very_light_brown">#dfd2c3</color>
+    <color name="c_light_brown">#c0a587</color>
+    <color name="c_mid_brown">#b18f6a</color>
+    <color name="c_brown">#584735</color>
+
+    <color name="c_gray">#D9D9D9</color>
+</resources>
