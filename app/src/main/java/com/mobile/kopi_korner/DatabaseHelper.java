@@ -17,11 +17,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String KEY_TYPE_DRINK = "type_drink";
     private static final String KEY_TOTAL_ORDER = "total_order";
     private static final String KEY_PRICE = "price";
+    private static final String KEY_TOTAL_PRICE = "total_price";
 
     private static final String CREATE_TABLE_ORDERS =
             "CREATE TABLE "
                     + TABLE_ORDER + "(" + KEY_ID
-                    + " INTEGER PRIMARY KEY AUTOINCREMENT," + KEY_CUSTOMER_NAME + " TEXT, " + KEY_TYPE_DRINK + " TEXT, " + KEY_TOTAL_ORDER + " INTEGER, " + KEY_PRICE + " INTEGER );";
+                    + " INTEGER PRIMARY KEY AUTOINCREMENT," + KEY_CUSTOMER_NAME + " TEXT, " + KEY_TYPE_DRINK + " TEXT, " + KEY_TOTAL_ORDER + " INTEGER, " + KEY_PRICE + " INTEGER, " + KEY_TOTAL_PRICE + " INTEGER);";
 
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -49,6 +50,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(KEY_TYPE_DRINK, typeDrink);
         values.put(KEY_TOTAL_ORDER, totalOrderInt);
         values.put(KEY_PRICE, priceInt);
+        values.put(KEY_TOTAL_PRICE, totalOrderInt * priceInt);
 
         long insert = db.insert(TABLE_ORDER, null, values);
 
@@ -71,6 +73,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 order.setTypeDrink(c.getString(c.getColumnIndexOrThrow(KEY_TYPE_DRINK)));
                 order.setTotalOrder(c.getInt(c.getColumnIndexOrThrow(KEY_TOTAL_ORDER)));
                 order.setPrice(c.getInt(c.getColumnIndexOrThrow(KEY_PRICE)));
+                order.setTotalPrice(c.getInt(c.getColumnIndexOrThrow(KEY_TOTAL_PRICE)));
                 orderModelArrayList.add(order);
             } while (c.moveToNext());
         }
@@ -91,6 +94,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(KEY_TYPE_DRINK, typeDrink);
         values.put(KEY_TOTAL_ORDER, totalOrder);
         values.put(KEY_PRICE, price);
+        values.put(KEY_TOTAL_PRICE, totalOrder * price);
 
         return db.update(TABLE_ORDER, values, KEY_ID + " = ?",
                 new String[]{String.valueOf(id)});

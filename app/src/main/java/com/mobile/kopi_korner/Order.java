@@ -4,17 +4,18 @@ import java.io.Serializable;
 
 public class Order implements Serializable {
     private String customerName, typeDrink;
-    private Integer id, totalOrder, price;
+    private Integer id, totalOrder, price, totalPrice;
 
     public Order() {
     }
 
-    public Order(Integer id, String nameCustomer, String typeDrink, Integer totalOrder, Integer price) {
+    public Order(Integer id, String nameCustomer, String typeDrink, Integer totalOrder, Integer price, Integer totalPrice) {
         this.id = id;
         this.customerName = nameCustomer;
         this.typeDrink = typeDrink;
         this.totalOrder = totalOrder;
         this.price = price;
+        this.totalPrice = totalPrice;
     }
 
     public Integer getId() {
@@ -55,5 +56,13 @@ public class Order implements Serializable {
 
     public void setPrice(Integer price) {
         this.price = price;
+    }
+
+    public Integer getTotalPrice() {
+        return totalPrice;
+    }
+
+    public void setTotalPrice(Integer totalPrice) {
+        this.totalPrice = totalPrice;
     }
 }

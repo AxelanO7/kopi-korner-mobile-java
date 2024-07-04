@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
     EditText etEmail, etPassword;
 
-    List<String> email = Arrays.asList("test@test.com", "admin");
-    List<String> password = Arrays.asList("test", "admin");
+    List<String> email = Arrays.asList("dian", "admin@gmail.com");
+    List<String> password = Arrays.asList("dian", "admin");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -24,12 +24,14 @@ public class HistoryOrderAdapter extends ArrayAdapter {
         TextView customerNameText = testSingleView.findViewById(R.id.tvCustomerName);
         TextView typeDrinkText = testSingleView.findViewById(R.id.tvOrderItem);
         TextView totalOrderText = testSingleView.findViewById(R.id.tvTotalTypeOrder);
-        TextView priceText = testSingleView.findViewById(R.id.tvTotalPrice);
+        TextView priceText = testSingleView.findViewById(R.id.tvPrice);
+        TextView totalPriceText = testSingleView.findViewById(R.id.tvTotalPrice);
 
         customerNameText.setText("Nama Pembeli : " + orders[position].getCustomerName());
         typeDrinkText.setText("- " + orders[position].getTypeDrink());
         totalOrderText.setText("Jumlah Order : " + orders[position].getTotalOrder());
         priceText.setText("Harga : " + orders[position].getPrice());
+        totalPriceText.setText("Total Harga : " + orders[position].getTotalPrice());
 
         return testSingleView;
     }

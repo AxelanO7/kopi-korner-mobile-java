@@ -69,6 +69,20 @@
         android:layout_height="16dp" />
 
     <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/karla"
+        android:text="Harga : Rp. 0"
+        android:textColor="@color/black"
+        android:textFontWeight="700"
+        android:textSize="22sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <TextView
         android:id="@+id/tvTotalPrice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

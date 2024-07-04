@@ -55,6 +55,7 @@
             android:id="@+id/etCustomerName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:hint="Nama Pembeli" />
 
         <TextView
@@ -70,6 +71,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:textColor="@color/black"
             android:entries="@array/type_order" />
 
         <TextView
@@ -86,6 +88,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Jumlah"
+            android:textColor="@color/black"
             android:inputType="number" />
 
         <TextView
@@ -103,6 +106,7 @@
             android:layout_height="wrap_content"
             android:enabled="false"
             android:inputType="number"
+            android:textColor="@color/black"
             android:text="25000" />
 
 
